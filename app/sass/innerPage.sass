@@ -1,0 +1,66 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+.innerPage
+  color: #fff
+  font-family: $default-font
+  text-transform: uppercase
+  font-weight: 600
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    opacity: .6
+    background-color: #333333
+  .h2
+    font-weight: 200
+    font-size: 25px
+  .slogan
+    font-size: 14px
+.content-wrapper
+  margin-top: 50px
+  .column
+    &-item
+      margin-bottom: 15px
+      color: rgb(87,81,83)
+      .caption
+        font-weight: 200
+        text-transform: uppercase
+        .h4
+          font-size: 16px
+        .h5
+          font-size: 9px
+          margin-bottom: 5px
+      .text
+        font-size: 9px
+    .brands
+      position: absolute
+      bottom: 0
+    .carousel-item
+      height: 450px
+      background-size: cover
+      background-position: center
+      width: inherit
+      position: relative
+      .nav
+        position: absolute
+        top: 45%
+      .carousel-next
+        right: 0
+      .active
+        a
+          padding: 4px
+          background-color: $accent
+          img
+            filter: invert(100%)
+
+
+
+
+
+
+  .
