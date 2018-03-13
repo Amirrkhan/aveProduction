@@ -1,7 +1,7 @@
 @import "vars"
 @import "fonts"
 @import "libs"
-@import "./innerPage.sass"
+@import "./innerpages.sass"
 
 ::placeholder
 	color: #666
@@ -12,11 +12,14 @@
 .display
 	visibility: visible
 	opacity: 1
-	transition: opacity 1s linear
+	top: 0
+	transition: opacity 1s ease
+	height: auto
 .hidden
 	visibility: collapse
 	opacity: 0
-	transition: opacity 1s linear
+	transition: opacity 1s ease
+	height: 0
 .column
 	display: -webkit-flex
 	display: -ms-flex

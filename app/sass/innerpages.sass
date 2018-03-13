@@ -57,10 +57,47 @@
           background-color: $accent
           img
             filter: invert(100%)
-
-
-
-
-
-
-  .
+.product-view
+  color: #575153
+  .product-review
+    align-items: center
+    div
+      margin-right: 10px
+      span
+        font-size: 13px
+        margin-right: 10px
+    .stars
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      margin-left: 15px
+      height: 15px
+    .text
+      span
+        padding-right: 10px
+        position: relative
+        &::after
+          content: ''
+          position: absolute
+          top: 2px
+          bottom: 0
+          width: 1px
+          height: 13px
+          right: 0
+          background-color: #575153
+        a
+          color: #575153
+          &:hover
+            color: $accent
+    .share
+      position: relative
+      left: 5px
+      .social-icons
+        margin-left: 5px
+        padding: 3.5px 0
+        img
+          margin-right: 7px
+          filter: invert(50%)
+          &:hover
+            filter: invert(80%)
+            transition: all 1s ease
